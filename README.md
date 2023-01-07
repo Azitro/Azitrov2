@@ -7,7 +7,7 @@ KURULUM AŞAĞIDA DÜZGÜN OKU VE YAP :)
 ### Kurulum
 
 ```console
-git clone https://github.com/Azitro/Azitro.git
+git clone https://github.com/Azitro/Azitrov2.git
 cd Azitro
 pip3 install -r requirements.txt
 python3 azitro.py
