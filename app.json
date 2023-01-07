@@ -1,0 +1,26 @@
+{
+    "name": "Azitro",
+    "description": "SMS Bomber",
+    "repository": "https://github.com/Azitro/Azitro",
+    "env": {
+        "TOKEN": {
+            "description": "Telegram botunun Token'ı",
+            "required": true
+        },
+        "SAHIP": {
+            "description": "Size SMS gelmemesi için telefon numaranız",
+            "required": false
+        }
+    },
+    "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
