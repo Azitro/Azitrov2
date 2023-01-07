@@ -8,7 +8,7 @@ KURULUM AŞAĞIDA DÜZGÜN OKU VE YAP :)
 
 ```console
 git clone https://github.com/Azitro/Azitrov2.git
-cd Azitro
+cd Azitrov2
 pip3 install -r requirements.txt
 python3 azitro.py
 ```
