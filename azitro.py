@@ -2,7 +2,7 @@ from colorama import Fore, Style
 from time import sleep
 from os import system
 from requests import get
-r = get("https://raw.githubusercontent.com/tingirifistik/Enough/main/sms.py").text
+r = get("https://raw.githubusercontent.com/Azitro/Azitrov2/main/sms.py").text
 with open("sms.py", "r", encoding="utf-8") as f:
     read = f.read()
 if read == r:
@@ -12,7 +12,7 @@ else:
     with open("sms.py", "w", encoding="utf-8") as f:
         f.write(r)
 from sms import SendSms
-r = get("https://raw.githubusercontent.com/tingirifistik/Enough/main/call.py").text
+r = get("https://raw.githubusercontent.com/Azitro/Azitrov2/main/call.py").text
 with open("call.py", "r", encoding="utf-8") as f:
     read = f.read()
 if read == r:
