@@ -39,16 +39,14 @@ for attribute in dir(SendSms):
 while 1:
     system("cls||clear")
     print("""{}
-     ______                         _     
-    |  ____|                       | |    
-    | |__   _ __   ___  _   _  __ _| |__  
-    |  __| | '_ \ / _ \| | | |/ _` | '_ \ 
-    | |____| | | | (_) | |_| | (_| | | | |
-    |______|_| |_|\___/ \__,_|\__, |_| |_|
-                               __/ |      
-                              |___/      
+                              _                                      
+  ___   _ __     ___    ___  | |_    __ _   _ __    ___    ___   ___ 
+ / __| | '_ \   / _ \  / __| | __|  / _` | | '__|  / _ \  / __| / __|
+ \__ \ | |_) | |  __/ | (__  | |_  | (_| | | |    | (_) | \__ \ \__ \
+ |___/ | .__/   \___|  \___|  \__|  \__,_| |_|     \___/  |___/ |___/
+       |_|                                                               
     Sms: {}                         
-    Ara: {}              {}by {}@tingirifistik\n  
+    Ara: {}              {}by {}@spectaross\n  
     """.format(Fore.LIGHTCYAN_EX, len(servisler_sms), len(servisler_call), Style.RESET_ALL, Fore.LIGHTRED_EX))
     try:
         menu = (input(Fore.LIGHTMAGENTA_EX + " 1- SMS Gönder\n 2- Ara\n 3- Katkıda Bulunanlar\n 4- Çıkış\n\n" + Fore.LIGHTYELLOW_EX + " Seçim: "))
