@@ -13,8 +13,8 @@ else:
 from sms import SendSms
 
 TOKEN = ""
-gif = "https://media.tenor.com/HyLYBcU6k4YAAAAM/comrade-dog.gif"
-adet = 47
+gif = "https://media.tenor.com/SWiGXYOM8eMAAAAC/russia-soviet.gif"
+adet = 55
 saniye = 0
 
 intents = discord.Intents.all()
@@ -37,7 +37,7 @@ async def on_message(message):
             embed=discord.Embed(title="SMS Bomber (+90)", description=(f"{adet} adet SMS Gönderiliyor --> {telno}\n{message.author.mention}"), color=0x001eff)
             embed.set_thumbnail(url=gif)
             await message.channel.send(embed=embed)
-            sms = SendSms(telno)
+            sms = SendSms(telno, "")
             while sms.adet < adet:
                 for attribute in dir(SendSms):
                     attribute_value = getattr(SendSms, attribute)

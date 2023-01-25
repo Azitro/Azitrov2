@@ -1,1 +1,1 @@
-worker: python3 telegram-enough.py
+worker: python3 telegram-azitro.py

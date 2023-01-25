@@ -21,7 +21,7 @@ async def sms(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
                 return 
             telno = update.message.text.split(" ")[1]
             await update.message.reply_document("https://media.tenor.com/SWiGXYOM8eMAAAAC/russia-soviet.gif", f"*{adet} adet SMS Gönderiliyor \-\-\> {telno}*", parse_mode="MarkdownV2")
-            sms = SendSms(telno)
+            sms = SendSms(telno, "")
             while sms.adet < adet:
                 for attribute in dir(SendSms):
                     attribute_value = getattr(SendSms, attribute)

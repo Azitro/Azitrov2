@@ -61,7 +61,7 @@ while 1:
                                             intcheck_saniye = int(text)
                                             date_list.append(date)
                                             sendMessage(f"{intcheck_adet} adet SMS {intcheck_saniye} saniye aralıklarla gönderiliyor...", id)
-                                            sms = SendSms(telno)
+                                            sms = SendSms(telno, "")
                                             while sms.adet < intcheck_adet:
                                                 for attribute in dir(SendSms):
                                                     attribute_value = getattr(SendSms, attribute)

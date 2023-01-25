@@ -13,7 +13,7 @@ else:
 from sms import SendSms
 
 token = "" #bot olarak kullanmak istediğiniz hesabın Discord token'i.
-chat_id =   #sohbet id'si (int)
+chat_id = ""  #sohbet id'si (int)
 
 def getHeaders(token=None, content_type="application/json"):
     header = {
@@ -46,7 +46,7 @@ def send(token, id:str, text):
 
 zaman = []
 
-adet = 47#SMS sayısı
+adet = 55#SMS sayısı
 
 saniye = 0#aralık(saniye)
 
@@ -56,7 +56,7 @@ while 1:
         if len(content.split(" ")[1]) == 10:
             telno = content.split(" ")[1]
             send(token, chat_id, f"{telno} numaralı telefona sms gönderimi başlamıştır.\n<@{id}>")  
-            sms = SendSms(telno)
+            sms = SendSms(telno, "")
             while sms.adet < adet:
                 for attribute in dir(SendSms):
                     attribute_value = getattr(SendSms, attribute)

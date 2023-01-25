@@ -1,7 +1,7 @@
 {
     "name": "Azitro",
     "description": "SMS Bomber",
-    "repository": "https://github.com/Azitro/Azitro",
+    "repository": "https://github.com/Azitro/Azitrov2",
     "env": {
         "TOKEN": {
             "description": "Telegram botunun Token'ı",
