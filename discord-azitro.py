@@ -12,7 +12,7 @@ else:
         f.write(r)
 from sms import SendSms
 
-TOKEN = "MTA3Mjg5MDYyNDc3NDI2MjkzNg.GhI3zN.8nEiXJ7GFZDsBQdWRmNlxzB9KmCjFo_7mhSQHE"
+TOKEN = ""
 gif = "https://media.tenor.com/SWiGXYOM8eMAAAAC/russia-soviet.gif"
 adet = 55
 saniye = 0
