@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from colorama import Fore, Style
 
 class SendSms():
-    adet = 0
+    adet = 10
     
     def __init__(self, phone, mail):
         self.phone = str(phone)
