@@ -2,7 +2,7 @@ from colorama import Fore, Style
 from time import sleep
 from os import system
 from requests import get
-r = get("https://raw.githubusercontent.com/Azitro/Azitrov2/main/sms.py").text
+r = get("https://raw.githubusercontent.com/Azitro/Azitrov3/main/sms.py").text
 with open("sms.py", "r", encoding="utf-8") as f:
     read = f.read()
 if read == r:
